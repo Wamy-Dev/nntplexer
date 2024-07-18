@@ -8,7 +8,7 @@ import (
 )
 
 type User struct {
-	Name      string `gorm:"size:32;primaryKey"`
+	Name      string `gorm:"size:64;primaryKey"`
 	Pass      string `gorm:"size:64"`
 	MaxConns  uint16 `gorm:"not null;default:0"`
 	IpSharing bool	 `gorm:"not null;default:0"`
