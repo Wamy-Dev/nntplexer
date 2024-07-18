@@ -67,7 +67,7 @@ func (b *NNTPBackend) CheckIpLimit(user string, ip string, ips map[string]int) b
 }
 
 func (b *NNTPBackend) Greeting() string {
-	return "201 Hi!"
+	return "201 Welcome to the TorBox Usenet Server!"
 }
 
 func (b *NNTPBackend) Article(messageId string) (textproto.MIMEHeader, io.Reader, error) {
